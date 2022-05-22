@@ -1,0 +1,16 @@
+#:kivy 2.1.0
+
+
+<WidgetLayout>
+    BoxLayout:
+        orientation:"horizontal"
+        size:root.width,root.height
+        GridLayout:
+            cols:2
+            Label:
+                text:"Dark mode"
+            Switch:
+                id:darkSwitch
+                on_active:root.themeswitch(*args)
+
+            
